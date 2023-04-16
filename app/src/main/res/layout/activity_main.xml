@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stylish Photo Frame"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="414dp">
+
+        <ImageView
+            android:id="@+id/pic0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="1"
+            app:srcCompat="@drawable/sunita"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-32dp" />
+
+        <ImageView
+            android:id="@+id/pic1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0"
+            app:srcCompat="@drawable/masarada"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-32dp" />
+
+        <ImageView
+            android:id="@+id/pic2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0"
+            app:srcCompat="@drawable/ramakrishna"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-32dp" />
+
+        <ImageView
+            android:id="@+id/pic3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:alpha="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/obama"
+            tools:layout_editor_absoluteY="-32dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/imgprev"
+        android:layout_width="213dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="100dp"
+        app:srcCompat="@android:drawable/ic_media_rew" />
+
+    <ImageButton
+        android:id="@+id/imgnext"
+        android:layout_width="213dp"
+        android:layout_height="43dp"
+        android:layout_marginLeft="100dp"
+        app:srcCompat="@android:drawable/ic_media_ff" />
+
+</LinearLayout>
